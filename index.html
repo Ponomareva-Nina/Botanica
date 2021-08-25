@@ -4,106 +4,119 @@
 <head>
         <title>Botanica. Букеты в Петербурге</title>
         <link href="style.css" rel="stylesheet">
+        
         <meta charset="utf-8">
         <meta name="description" content="Букеты в Санкт-Петербурге">
         <meta name="keywords" content="цветы, букеты, Санкт-Петербург, Петербург, цветочные композиции">
-</head>
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    </head>
 
 <body>
         <header class="page-header"> 
             <nav class="main-menu">
-                <a>
-                <img src="images/main/logo.svg" width="100" alt="Логотип Botanica">
-                </a>
-                <ul> 
-                    <li>
-                        <a href=""> Каталог </a>
-                    </li>
-                    <li>
-                        <a href=""> Доставка и оплата </a>
-                    </li>
-                    <li>
-                        <a href="#"> Отзывы </a>
-                    </li>
-                    <li>
-                        <a href=""> Спецпредложения </a>
-                    </li>
-                    <li>
-                        <a href="#"> Контакты </a>
-                    </li>
-                    <li>
-                        <a href=""> Корзина </a>
-                    </li>
-                </ul>
+                <div class="logo-header">
+                    <a>
+                        <img src="images/main/logo.svg" width="100" alt="Логотип Botanica">
+                    </a>
+                </div>
+                    <ul> 
+                        <li>
+                            <a>Каталог</a>
+                        </li>
+                        <li>
+                            <a>Доставка и оплата</a>
+                        </li>
+                        <li>
+                            <a>Отзывы</a>
+                        </li>
+                        <li>
+                            <a>Спецпредложения</a>
+                        </li>
+                        <li>
+                            <a>Контакты</a>
+                        </li>
+                        <li>
+                            <a>Корзина</a>
+                        </li>
+                    </ul>
             </nav>
         </header>
     
     <main>
-        <h1>Авторские букеты в Петербурге</h1>
+    <section>
+        <div class="introduction">
+            <h1>Авторские букеты <span class="italic">в Петербурге</span></h1>
             <p>Оригинальные свежие букеты с доставкой по всему городу</p>
             <a href="" class="button">Cмотреть каталог</a>
-
-        <img src="images/main/tulips.jpg" width="386" height="404" alt="Букет тюльпанов">
-        <img src="images/main/roses.jpg" width="387" height="420" alt="Авторская композиция из сезонных цветов">
-   
-   
-        <section>
+        </div>        
+        <div class="introduction-image">
+            <img src="images/main/tulips.jpg" width="386" height="404" alt="Букет тюльпанов">
+            <img src="images/main/roses.jpg" width="387" height="420" alt="Авторская композиция из сезонных цветов">
+        </div>
+        </section>
+    <section class="advantage">
             <h2 class="visually-hidden">Наши преимущества</h2>
-        <div>
-            <img src="images/main/delivery.svg" width="82" height="52" alt="векторный грузовичок">
-             <h3>Быстрая доставка</h3>
-             <p>Можем собрать букет и передать его в доставку всего за час.</p>
-        </div>
-        <div>
-            <img src="images/main/bouquet.svg" width="52" height="52" alt="векторный букет">
-            <h3> Всегда свежие цветы </h3>
-            <p>Тщательно следим за состоянием цветов, а опытные флористы отбирают для букетов каждый цветок.</p>
-        </div>
-        <div>
-            <img src="images/main/photo.svg" width="59" height="52" alt="векторный фотоаппарат">
-            <h3>Отправляем фото цветов</h3>
-            <p>Перед доставкой сделаем фотографию букета и отправим вам.</p>
-        </div>
+                <div>
+                    <img src="images/main/delivery.svg" width="82" height="52" alt="векторный грузовичок">
+                    <h3>Быстрая доставка</h3>
+                    <p>Можем собрать букет и передать его в доставку всего за час.</p>
+                </div>
+                <div>
+                    <img src="images/main/bouquet.svg" width="52" height="52" alt="векторный букет">
+                    <h3> Всегда свежие цветы </h3>
+                    <p>Тщательно следим за состоянием цветов, а опытные флористы отбирают для букетов каждый цветок.</p>
+                </div>
+                <div>
+                    <img src="images/main/photo.svg" width="59" height="52" alt="векторный фотоаппарат">
+                    <h3>Отправляем фото цветов</h3>
+                    <p>Перед доставкой сделаем фотографию букета и отправим вам.</p>
+                </div>
     </section>
 
-    
-  <!--НАСТРОИТЬ ВЕРНО КНОПКИ В ЭТОМ БЛОКЕ
-    <section class="sliders"> 
+    <section class="popular"> 
         <h2> Популярные букеты </h2>
-            <h3>Букет "Нежность"</h3>
+            <div class="popular-item">
+                <h3>Букет "Нежность"</h3>
                 <p> Элегантный букет, который станет отличным подарком на день рождения или юбилей.</p>
                 <p>30 &times; 40 см</p>
-                <p>3600руб.</p>
-                <a href="" class="button">Заказать</a>
+                <p class="price">3600руб.</p>
+                <a href="">Заказать</a>
+            </div>                      
+            <div class="popular-image">
                 <img src="images/main/slider1.png" width="387" height="438" alt="Букет из роз и эустом">
-       
-        <button>Вперед</button>
-        <button>Назад</button>
+            </div>
+            <div>
+                <button class="arrow-left"><span class="visually-hidden">Назад</span></button>
+                <button class="arrow-right"><span class="visually-hidden">Вперед</span></button>
+            </div>
     </section>
-  -->       
-    
+
     <section class="catalogue">
-    <div class="wedding-bouqets">
-        <a href="">
-            <h2>Свадебные букеты</h2>
-            <p>Букеты для невест</p>
-            <img src="images/main/wedding.jpg" width="387" height="442" alt="Свадебный букет">
-        </a>   
-    </div>
-    <div class="peonies">
-        <a href="">
-            <h2>Букеты с пионами</h2>
-            <p>Букеты с сезонными пионами</p>
-            <img src="images/main/peony.jpg"  width="387" height="442" alt="Букет из пионов">
-        </a>
-    </div>
-    <div class="assortment">
-        <a href="">
-            <h2>Выбрать букет</h2>        
-            <p>Букеты в ассортименте</p>
-            <img src="images/main/assortment.jpg"  width="387" height="442" alt="Авторский букет из редких цветов">
-        </a>
-    </div>  
+        <div class="catalogue wedding-bouqets">
+            <a href="">
+                <h2>Свадебные букеты</h2>
+                <p>Букеты для невест</p>
+                <img src="images/main/wedding.jpg" width="387" height="442" alt="Свадебный букет">
+            </a>   
+        </div>
+        <div class="catalogue peonies">
+            <a href="">
+                <h2>Букеты с пионами</h2>
+                <p>Букеты с сезонными пионами</p>
+                <img src="images/main/peony.jpg"  width="387" height="442" alt="Букет из пионов">
+            </a>
+        </div>
+        <div class="catalogue other">
+            <a href="">
+                <h2>Выбрать букет</h2>        
+                <p>Букеты в ассортименте</p>
+                <img src="images/main/assortment.jpg"  width="387" height="442" alt="Авторский букет из редких цветов">
+            </a>
+        </div>  
     </section>
 
     <section class="sale">
@@ -211,13 +224,13 @@
             </a>
             <ul>
                 <li>
-                    <a href=""> Каталог </a>
+                    <a href="">Каталог</a>
                 </li>
                 <li>
-                    <a href=""> Доставка и оплата </a>
+                    <a href="">Доставка и оплата</a>
                 </li>
                 <li>
-                    <a href="#"> Отзывы </a>
+                    <a href="#">Отзывы</a>
                 </li>
                 <li>
                     <a href="">Спецпредложения</a>
