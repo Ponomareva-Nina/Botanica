@@ -5,44 +5,106 @@ body {
     font-weight: normal;
     color: #AE7C78;
     background: #ffffff;
-    width: 1400px;
+    margin: 0;
 }
+
 .visually-hidden {
     display: none;
 }
+
 header {
-    line-height: 19.5px;
+    line-height: 20px;
 }
-nav.main-menu {
+
+.main-menu {
     border-top: 1px solid #AE7C78;
     border-bottom: 1px solid #AE7C78;
+    display: grid;
+    grid-template-columns: 1fr 100pt 1fr;
+    column-gap: 30px;
+    align-items: center;
 }   
-nav.main-menu ul li {
+
+.navigation-list {
     list-style: none;
-    display: inline;    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;  
 }
-.logo-header {
-    text-align: center;
-    }
-.introduction {
-    width: 384px;
+
+.navigation-item {
+    display: block;
+    padding: 15px 20px;
 }
-.introduction-text p,
-.sale p {
-    font-family: "Montserrat", "Arial", sans-serif;
-    font-size: 24px;
-    line-height: 29px; 
+
+.logo {
+ margin: auto;
 }
+
 h1 {
     font-family: "Playfair Display", "Cambria", serif;
     font-size: 44px;
     font-style: normal;
     font-weight: normal;
     line-height: 59px;
+    margin: 0;
+    padding: 0;
 }
+
 span.italic {
     font-style: italic;
 }
+
+.introduction {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    align-items: start;
+}
+
+.introduction-item {
+    padding: 10px;
+}
+
+.introduction-item.text {
+    width: 384px;
+}
+
+.button {
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: normal;
+    color: #FFFFFF; 
+    text-decoration: none;
+    text-align: center;
+    padding-top: 25px;
+    margin-top: 45px;
+    
+    display: inline-block;
+    box-sizing: border-box;
+    width: 285px;
+    height: 80px;
+    background: #D89999;
+    border: solid #D89999;
+    border-radius: 40px;
+}
+
+.introduction-item.image1 {
+    margin-top: 60px;
+}
+
+.introduction-item.image2 {
+}
+
+.introduction-item.text p,
+.sale p {
+    font-size: 24px;
+    line-height: 29px; 
+}
+
 h3,
 cite,
 .contacts li p:nth-child(2) {
@@ -52,12 +114,21 @@ cite,
     font-style: normal;
     font-weight: 500;
 }
-.advantage div {
-   display: inline-block;
-   width: 285px;
-   vertical-align: top;
-   margin: 20px;
+.advantage {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   
 }
+
+.advantage-item {
+    width: 285px;
+}
+
+.advantage-image {
+    
+}
+
 h2 {
     font-family: "Playfair Display", "Cambria", serif;
     font-size: 44px;
@@ -130,13 +201,12 @@ h2 {
 .sale-image {
     float: right;
 }
-
 .order-steps div {
     display: inline-block;
     vertical-align: top;
     width: 285px;
     text-align: center;
-
+}
 .contacts-text {
     width: 386px;
     height: 520px;
