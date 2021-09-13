@@ -17,26 +17,28 @@ img {
     display: none;
 }
 
-header {
+.menu-container {
     line-height: 20px;
-}
-
-.main-menu {
+    margin-bottom: 70px;
+    width: 1440px;
     border-top: 1px solid #AE7C78;
     border-bottom: 1px solid #AE7C78;
-    display: grid;
-    grid-template-columns: 1fr 100pt 1fr;
-    column-gap: 30px;
-    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .navigation-list {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
     margin: 0;
     padding: 0;
+}
+
+.navigation-item:nth-child(3) {
+    margin-right: 100px;
 }
 
 .navigation-item {
@@ -45,7 +47,10 @@ header {
 }
 
 .logo {
-    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: -50px;
+    padding: 10px;
 }
 
 h1 {
@@ -65,8 +70,8 @@ span.italic {
 .introduction {
     display: flex;
     justify-content: center;
-    margin-top: 60px;
     align-items: start;
+    margin-bottom: 20px;
 }
 
 .introduction-item {
@@ -120,7 +125,7 @@ cite,
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 20px;
+    margin-bottom: 55px;
 }
 
 .advantage-item {
@@ -144,7 +149,7 @@ h2 {
 }
 
 .slider {
-    margin-top: 55px;
+    margin-bottom: 80px;
 }
 
 .popular {
@@ -152,6 +157,7 @@ h2 {
     grid-template-columns: repeat(2, 397px);
     column-gap: 10px;
     justify-content: center;
+    margin-top: 45px;
 }
 
 .popular-item h3 {
@@ -179,71 +185,97 @@ h2 {
     text-decoration: none;
 }
 
-.catalogue div {
-    width: 388px;
-    height: 442px;
-    display: inline-block;
-    margin: 19px;
-    padding: 0;
+.catalogue {
+    display: grid;
+    grid-template-columns: repeat(3, 388px);
+    grid-template-rows: 442px;
+    gap: 19px;
+    justify-content: center;
+    margin-bottom: 80px;
 }
 
-.catalogue a h2 {
+.wedding {
+    background-image: url("../images/main/wedding.jpg");
+}
+
+.peonies {
+    background-image: url("../images/main/peony.jpg");
+}
+
+.other {
+    background-image: url("../images/main/assortment.jpg");
+}
+
+.catalogue-link {
+    display: flex;
+    height: 442px;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: none;
+    background-color: rgba(174, 124, 120, 0.6);
+}
+
+.catalogue h2 {
     font-family: "Playfair Display", "Cambria", serif;
     font-weight: bold;
     font-size: 36px;
     line-height: 48px;
     text-align: center;
     color: #FFFFFF;
+    margin: 0;
 }
 
-.catalogue a p {
+.catalogue p {
     font-family: "Montserrat", "Arial", sans-serif;
     font-size: 16px;
     line-height: 20px;
     color: #FFFFFF;
+    text-align: center;
 }
 
 .sale {
-    width: 1200px;
-    height: 391px;
+    display: grid;
+    grid-template-columns: 600px 600px;
+    grid-template-rows: 391px;
+    gap: 0;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+.sale-text {
     background-color: #AE7C78;
 }
 
-.sale p {
+.sale-text p {
     font-family: "Montserrat", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
     line-height: 29px;
     color: #FFFFFF;
-    width: 387px;
-    height: 145px;
     padding-left: 92px;
-    padding-bottom: 64px;
+    width: 387px;
 }
 
-.sale h2 {
+.sale-text h2 {
     font-family: "Playfair Display", "Cambria", serif;
     font-size: 44px;
     font-style: normal;
     font-weight: normal;
     line-height: 59px;
     color: #FFFFFF;
-    width: 488px;
-    height: 118px;
     text-align: left;
     padding-left: 92px;
-    padding-top: 40px;
 }
 
-.sale-image {
-    float: right;
+.order-steps {
+    display: grid;
+    grid-template-columns: repeat(4, 285px);
+    justify-content: center;
+    margin-bottom: 80px;
 }
 
-.order-steps div {
-    display: inline-block;
-    vertical-align: top;
-    width: 285px;
+.step {
     text-align: center;
 }
 
