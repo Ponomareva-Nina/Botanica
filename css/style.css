@@ -63,11 +63,19 @@ span.italic {
 .navigation-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
 }
 
 .navigation-item:nth-child(3) {
+    margin-right: 100px;
+}
+
+.navigation-item:first-child {
+    margin-left: 100px;
+}
+
+.navigation-item:last-child {
     margin-right: 100px;
 }
 
