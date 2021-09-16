@@ -53,7 +53,7 @@ span.italic {
 .page-header {
     line-height: 20px;
     margin-bottom: 70px;
-    max-width: 1440px;
+    width: 1440px;
     border-top: 1px solid #AE7C78;
     border-bottom: 1px solid #AE7C78;
     margin-left: auto;
@@ -68,7 +68,6 @@ span.italic {
 }
 
 .navigation-item {
-    display: block;
     padding: 20px 25px;
     margin-right: 30px;
 }
@@ -82,7 +81,7 @@ span.italic {
 }
 
 .introduction {
-    max-width: 1440px;
+    width: 1440px;
     display: flex;
     justify-content: center;
     align-items: start;
@@ -139,7 +138,7 @@ cite,
 }
 
 .advantage {
-    max-width: 1220px;
+    width: 1220px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
