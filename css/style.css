@@ -53,7 +53,7 @@ span.italic {
 .page-header {
     line-height: 20px;
     margin-bottom: 70px;
-    width: 1440px;
+    min-width: 1440px;
     border-top: 1px solid #AE7C78;
     border-bottom: 1px solid #AE7C78;
     margin-left: auto;
@@ -138,7 +138,7 @@ cite,
 }
 
 .advantage {
-    width: 1220px;
+    min-width: 1220px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
