@@ -68,12 +68,22 @@ span.italic {
 }
 
 .navigation-item {
-    padding: 20px 25px;
     margin-right: 30px;
 }
 
 .navigation-item:first-child {
     margin-left: 30px;
+}
+
+.navigation-link {
+    display: block;
+    padding: 20px 25px;
+    text-decoration: none;
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: normal;
+    color: #AE7C78;
 }
 
 .logo {
