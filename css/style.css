@@ -58,7 +58,6 @@ h3 {
 }
 
 .page-header {
-    border-top: 1px solid #AE7C78;
     border-bottom: 1px solid #AE7C78;
     max-width: 1400px;
     margin-left: auto;
@@ -99,11 +98,11 @@ h3 {
 .introduction-wrapper {
     margin-top: 70px;
     margin-bottom: 50px;
+    margin-left: 20px;
 }
 
 .introduction {
     display: flex;
-    justify-content: center;
     align-items: flex-start;
     column-gap: 20px;
 }
@@ -114,8 +113,7 @@ h3 {
 }
 
 .introduction__description {
-    width: 386px;
-    flex-shrink: 0;
+    max-width: 385px;
 }
 
 .introduction__item img {
@@ -186,13 +184,19 @@ h3 {
 
 .popular {
     display: grid;
-    grid-template-columns: repeat(2, 397px);
-    justify-content: center;
+    grid-template-columns: 1fr 1fr;
     margin-top: 45px;
 }
 
 .popular-item {
     padding: 10px;
+    max-width: 390px;
+    justify-self: end;
+}
+
+.popular-image {
+    max-width: 390px;
+    justify-self: start;
 }
 
 .arrow {
@@ -322,13 +326,12 @@ h3 {
     grid-template-columns: 2fr 1.5fr 2fr;
     grid-auto-flow: column;
     gap: 20px;
-    justify-content: center;
 }
 
 .news-text {
     grid-row: span 2;
     min-width: 350px;
-    padding-right: 10px;
+    margin-left: 20px;
 }
 
 .news-text__title {
@@ -362,7 +365,7 @@ h3 {
 }
 
 .icon:hover {
-    transform: scale(1.5);
+    transform: scale(1.3);
     filter: grayscale(0);
 }
 
@@ -429,12 +432,15 @@ h3 {
 }
 
 .footer__container {
+    max-width: 1400px;
     min-height: 80px;
     background-color: #AE7C78;
     display: grid;
     column-gap: 10px;
     grid-template-columns: 1fr 3fr 1fr;
     align-items: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .footer-logo {
@@ -457,6 +463,7 @@ h3 {
     color: #ffffff;
     display: block;
     padding: 15px 20px;
+    text-align: center;
 }
 
 .icons {
@@ -468,4 +475,9 @@ h3 {
 .footer-icon {
     display: block;
     padding: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.footer-icon:hover {
+    transform: scale(1.3);
 }
