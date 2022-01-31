@@ -403,22 +403,22 @@ h3 {
     box-sizing: border-box;
 }
 
-.contact-card-items {
+.contact-card__info {
     list-style: none;
     margin: 5px 0;
     padding: 0;
 }
 
-.contact-card-item {
+.contact-item {
     padding: 0;
     margin-bottom: 30px;
 }
 
-.contact-card-link {
+.contact-link {
     color: #AE7C78;
 }
 
-.contact-card-link:hover {
+.contact-link:hover {
     color: #634c4b;
 }
 
@@ -428,92 +428,44 @@ h3 {
     border-radius: 12px;
 }
 
-.footer-container {
-    width: 1440px;
-    min-height: 97px;
+.footer__container {
+    min-height: 80px;
     background-color: #AE7C78;
-    margin-left: auto;
-    margin-right: auto;
     display: grid;
-    grid-template-columns: 200px 1fr 200px;
+    column-gap: 10px;
+    grid-template-columns: 1fr 3fr 1fr;
     align-items: center;
 }
 
 .footer-logo {
-    justify-self: center;
+    display: block;
+    justify-self: end;
 }
 
 .footer-list {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
-.footer-list-item {
-    font-family: "Montserrat", "Arial", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
+.footer-list__item {
     text-decoration: none;
     color: #ffffff;
     display: block;
-    padding: 20px;
-    margin-right: 55px;
+    padding: 15px 20px;
 }
 
 .icons {
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    gap: 10px;
 }
 
 .footer-icon {
-    margin: 10px;
-}
-
-.footer-container {
-    width: 1440px;
-    min-height: 97px;
-    background-color: #AE7C78;
-    margin-left: auto;
-    margin-right: auto;
-    display: grid;
-    grid-template-columns: 200px 1fr 200px;
-    align-items: center;
-}
-
-.footer-logo {
-    justify-self: center;
-}
-
-.footer-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.footer-list-item {
-    font-family: "Montserrat", "Arial", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    text-decoration: none;
-    color: #ffffff;
     display: block;
-    padding: 20px;
-    margin-right: 55px;
-}
-
-.icons {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.footer-icon {
-    margin: 10px;
+    padding: 10px;
 }
